@@ -1,22 +1,45 @@
-import React from "react";
+// import React from "react";
+// import ReactDOM from "react-dom";
+// import PropTypes from "prop-types";
+// import "bootstrap";
+// import "./styles.css";
+// import "./icons.js";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+// function SimpleCounter(props) {
+// 	return (
+// 		<div>
+// 			<div className="four">{props.digitFour % 10}</div>
+// 			<div className="three">{props.digitThree % 10}</div>
+// 			<div className="two">{props.digitTwo % 10}</div>
+// 			<div className="one">{props.digitOne % 10}</div>
+// 		</div>
+// 	);
+// }
 
-//create your first component
+// SimpleCounter.propTypes = {
+// 	digitFour: PropTypes.number,
+// 	digitThree: PropTypes.number,
+// 	digitTwo: PropTypes.number,
+// 	digitOne: PropTypes.number
+// };
 
-// export class Home extends React.Component {
-// 	render() {
-// 		return (
-// OR
+// let counter = 0;
 
-export const Home = () => {
-	return (
-		<div className="here">
-			<h1 className="four">04 | </h1>
-			<h1 className="three">03 | </h1>
-			<h1 className="two">02 | </h1>
-			<h1 className="one">01 </h1>
-		</div>
-	);
-};
+// setInterval(function() {
+// 	const four = Math.floor(counter / 1000);
+// 	const three = Math.floor(counter / 100);
+// 	const two = Math.floor(counter / 10);
+// 	const one = Math.floor(counter / 1);
+// 	console.log(four, three, two, one);
+
+// 	counter++;
+// 	ReactDOM.render(
+// 		<SimpleCounter
+// 			digitOne={one}
+// 			digitTwo={two}
+// 			digitThree={three}
+// 			digitFour={four}
+// 		/>,
+// 		document.querySelector("#app")
+// 	);
+// }, 1000);
