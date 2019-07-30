@@ -12,10 +12,10 @@ import "../styles/index.scss";
 function SimpleCounter(props) {
 	return (
 		<div className="here">
-			<h2 className="four">{props.digitFour % 10}</h2>
-			<h2 className="three">{props.digitThree % 10}</h2>
-			<h2 className="two">{props.digitTwo % 10}</h2>
-			<h2 className="one">{props.digitOne % 10}</h2>
+			<h2 className="four">{props.digitFour % 60}</h2>
+			<h2 className="three">{props.digitThree % 60}</h2>
+			<h2 className="two">{props.digitTwo % 60}</h2>
+			<h2 className="one">{props.digitOne % 60}</h2>
 		</div>
 	);
 }
@@ -29,7 +29,7 @@ let counter = 0;
 setInterval(function() {
 	const four = Math.floor(counter / 1000);
 	const three = Math.floor(counter / 100);
-	const two = Math.floor(counter / 10);
+	const two = Math.floor(counter / 60);
 	const one = Math.floor(counter / 1);
 
 	//render your react application
